@@ -14,7 +14,10 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-}
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  position: relative;
+  }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -28,4 +31,73 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+div {
+  border: 1px solid green;
+}
+img {
+  border: 1px solid green;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /*как вырву лого и сабтайтл, менять на center*/
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 3;  
+}
+
+.title {
+  width: 730px;
+  margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.subtitle {
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  z-index: 3;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.square-pic {
+  width: 568px;
+  height: 568px;
+  margin-top: 64px;
+  right: 0;
+  background-color: rgb(30, 144, 255);
+  position: absolute;
+  z-index: 1;
 }
