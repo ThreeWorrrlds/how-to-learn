@@ -8,8 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-weight: normal;
-  color: #000000;
-  margin: 0 auto;
+  color: #000000;  
   padding: 0;
   box-sizing: border-box;
 }
@@ -114,7 +113,7 @@
   width: 175px;
   line-height: 1.2;
   font-size: 18px;  
-  color:  #2f80ed;
+  color: #2f80ed;
 }
 
 .two-columns__main-text {  
@@ -123,7 +122,7 @@
   width: 80%;
   min-width: 784px;
   justify-content: space-between; 
-  gap: 30px;   
+  gap: 30px;
 }
 
 .two-columns__paragraph {
