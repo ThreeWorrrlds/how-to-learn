@@ -10,34 +10,26 @@
 </head>
 
 <body>
-  <div class="page">
-    
-    <div class="header">    <!--начало секции хедер-->
-    	<div class="column">
-    	  <img src="images/logo_place_header.svg" alt="изображение" class="logo"></img>
-        <div class="title">Научиться учиться</div>
-        <div class="subtitle">
-        	Какие современные и эффективные подходы
-        	к обучению вы можете использовать в своей
-        	жизни?<a class="link" href="#"> Узнать →</a>  
-        </div>
-    	</div>
-      
-      <div class="row">
-        <img src="images/header-image.png" alt="изображение" class="main-illustration"></img>
-        <div class="square-pic"></div>
-      </div>   
-    </div>			<!--конец секции хедер-->
-
+  <section class="page">     <!--начало секции page-->
+    <section class="content">  <!--начало секции content-->    
+    <section class="header">    <!--начало секции хедер-->    	
+    	<img src="images/logo_place_header.svg" alt="изображение" class="header__logo logo_place_header"></img>
+      <div class="header__title">Научиться учиться</div>
+      <div class="header__subtitle">
+        Какие современные и эффективные подходы
+        к обучению вы можете использовать в своей
+        жизни?<a class="header__link" href="#"> Узнать →</a>  
+      </div>
+      <img src="images/header-image.png" alt="изображение" class="header__main-illustration"></img>
+      <div class="header__square-pic"></div>        
+    </section>			<!--конец секции хедер-->
     
 
-    <div class="description">  <!--начало секции description-->
-      <div class="two-columns">
-        
+    <section class="description">  <!--начало секции description-->
+      <div class="description__two-columns">        
         <div class="two-columns__brief"> <!--первая колонка-->
           Главные проблемы в обучении           
-        </div>										<!--конец первой колонки-->            		
-
+        </div>										<!--конец первой колонки-->
         <div class="two-columns__main-text"> 	<!--вторая колонка в 3 строки-->
           <div class="two-columns__paragraph">
         	   Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы 
@@ -46,77 +38,74 @@
         	   выветривается и не приносит пользы.
           </div>
           <div class="two-columns__paragraph">
-            <span class="span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
+            <span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?
           </div> 
           <div class="two-columns__paragraph">
           	Конкретные техники и упражнения помогают изменить подход к обучению, сделать его
           	эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
           </div>
         </div>						<!--конец колонки в 3 строки--> 
-      </div>  <!--конец секции description-->
-    </div>
+      </div>  
+    </section>   	<!--конец секции description-->
 
 
-    <div class="digits">      <!--начало секции диджитс-->
-      <div class="section-title">Цифры и факты</div>
-      <div class="section-subtitle">Про учёбу и мозг</div>
-      
-      <table class="table">
+    <section class="digits">      <!--начало секции диджитс-->
+      <div class="digits__section-title">Цифры и факты</div>
+      <div class="digits__section-subtitle">Про учёбу и мозг</div>      
+      <table class="digits__table">
 	
-        <tr class="table__cell thead">   <!--первая строка таблицы-->
-          <th>86 миллиардов</th>
-          <th>2.1 миллиарда</th>
-          <th>1000 терабайт</th>
-          <th>500 триллионов</th>   
+        <tr class="table__cell thead">   <!--первая строка заголовки таблицы-->
+          <th class="th">86 миллиардов</th>
+          <th class="th">2.1 миллиарда</th>
+          <th class="th">1000 терабайт</th>
+          <th class="th">500 триллионов</th>   
         </tr>
 
-        <tr class="table__cell tbody string">
-          <td>Число нейронов в мозге человека</td>
-          <td>Число нуждающихся в повышении квалификации 
+        <tr class="table__cell tbody">      <!--вторая строка текст таблицы-->
+          <td class="td">Число нейронов в мозге человека</td>
+          <td class="td">Число нуждающихся в повышении квалификации 
           	<p class="string">Всемирный Банк, 2017</p>
           </td>
-        	 <td>Объём памяти человека</td>
-          <td>Число ответственных за обучение нервных синапсов у взрослого человека</td>
+        	 <td class="td">Объём памяти человека</td>
+          <td class="td">Число ответственных за обучение нервных синапсов у взрослого человека</td>
         </tr>   
 
-        <tr class="table__cell thead">   <!--вторая строка таблицы-->
-          <th>420 миллионов</th>
-          <th>17–20 лет</th>
-          <th>1885 год</th>
-          <th>1889 год</th>
+        <tr class="table__cell thead">   <!--третья строка заголовки таблицы-->
+          <th class="th">420 миллионов</th>
+          <th class="th">17–20 лет</th>
+          <th class="th">1885 год</th>
+          <th class="th">1889 год</th>
         </tr>
 
-        <tr class="table__cell tbody string">
-          <td>Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
+        <tr class="table__cell tbody">  <!--четвертая строка текст таблицы-->
+          <td class="td">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
           	<p class="string">Всемирный Банк, 2017</p>
           </td>
-          <td>Пик обучаемости</td>
-          <td>Открытие кривой забывания</td>
-          <td>Открытие условного рефлекса</td>
+          <td class="td">Пик обучаемости</td>
+          <td class="td">Открытие кривой забывания</td>
+          <td class="td">Открытие условного рефлекса</td>
         </tr>
-      </table>       <!--конец секции диджитс-->
-    </div>
+      </table>       
+    </section>       <!--конец секции диджитс-->
 
 
+  	 <section class="feynman">    <!--начало секции фейнман-->
+  	   <div class="group">
+  	     <div class="feynman__title">Метод Фейнмана</div>
+  	     <div class="feynman__subtitle">Выучить и не забыть.</div>
+  	     <a href="#" class="feynman__link">Подробнее →</a>
+  	     <img src="images/feynman.png" alt="изображение" class="feynman__img">
+  	   </div>
+  	 </section>     <!--конец секции фейнман-->
 
-  	 <div class="feynman">  <!--начало секции кауфман-->
-  	   <div class="feynman__title">Метод Фейнмана</div>
-  	   <div class="feynman__subtitle">Выучить и не забыть.</div>
-  	   <a href="#" class="feynman__link">Подробнее →</a>
-  	   <img src="images/feynman.png" alt="изображение" class="feynman__img">
-  	 </div>  <!--конец секции кауфман-->
 
-
-
-  	 <div class="kaufman">
-
+  	 <section class="kaufman">          <!--начало секции кауфман-->
   	 	<img src="images/kaufman-triangle.svg" alt="изображение" class="triangle">
   	 	<div class="kaufman__section-title theme_dark">Принципы обучения</div>
       <div class="kaufman__section-subtitle theme_dark">от Джоша Кауфмана</div>
-
-      <table class="kaufman__table theme_dark">
-	
-        <tr class="t_block k-head theme_dark">   <!--первая строка таблицы-->
+      
+      <table class="kaufman__table theme_dark">	
+        <tr class="table__block k-head theme_dark">   <!--первая строка таблицы-->
           <th class="cell-width">1</th>
           <th class="cell-width">2</th>
           <th class="cell-width">3</th>
@@ -124,7 +113,7 @@
           <th class="cell-width">5</th>   
         </tr>
 
-        <tr class="t_block k-body theme_dark">
+        <tr class="table__block k-body theme_dark">    <!--вторая строка таблицы-->
         	 <td class="cell-width">Выберите привлекательный проект.</td>
           <td class="cell-width">Сосредоточьтесь на каком-то одном навыке.</td>
           <td class="cell-width">Определите целевой уровень мастерства.</td>
@@ -132,7 +121,7 @@
           <td class="cell-width">Приготовьте всё необходимое для занятий.</td>
         </tr>   
 
-        <tr class="t_block k-head theme_dark">   <!--вторая строка таблицы-->
+        <tr class="table__block k-head theme_dark">   <!--третья строка таблицы-->
           <th class="cell-width">6</th>
           <th class="cell-width">7</th>
           <th class="cell-width">8</th>
@@ -140,58 +129,51 @@
           <th class="cell-width">10</th> 
         </tr>
 
-        <tr class="t_block k-body theme_dark">
+        <tr class="table__block k-body theme_dark">     <!--четвертая строка таблицы-->
           <td class="cell-width">Устраните препятствия для занятий.</td>
           <td class="cell-width">Выделите специальное время для занятий.</td>
           <td class="cell-width">Создайте быстрые петли обратной связи.</td>
           <td class="cell-width">Занимайтесь по расписанию, короткими интенсивными интервалами.</td>
           <td class="cell-width">Уделяйте внимание количеству и скорости.</td>
         </tr>
-      </table>       <!--конец секции кауфман-->
-  	 </div>
+      </table>       
+  	  </section>			      <!--конец секции кауфман-->
+  	 </section>				<!--конец секции content-->
 
   	 
-  	 <div class="footer">    <!--начало секции футер-->
-  	 	<div class="footer__row theme_dark"> 
-  	 		
-  	 		<img src="images/logo_place_footer.svg" alt="изображение" class="new"></img>  <!--rename class-->
-  	 		<p class="author">© Игорян</p>  	 		
-
-  	 		<div class="column_first"></div>
-
-
-  	 		<div class="column_second">
-  	 			<p class="c-header">О практикуме</p>
-  	 			<div class="column_links">
-  	 			  <a href="#" class="text theme_dark">Главная</a>
-  	 			  <a href="#" class="text theme_dark">Концепция</a>
-  	 			  <a href="#" class="text theme_dark">Наставники</a>
+  	 <section class="footer">    <!--начало секции футер-->
+  	 	<div class="footer__columns theme_dark">   	 		
+  	 	  <img src="images/logo_place_footer.svg" alt="изображение" class="footer__logo">  
+  	 		<p class="footer__author">© Виктор Абанькин</p>
+  	 		<div class="footer__column footer__column_content_copyright"></div>  <!--первая колонка лого+автор-->
+  	 		<div class="footer__column">
+  	 			<p class="footer__column-heading">О практикуме</p>						<!--вторая колонка ссылок-->
+  	 			<div class="footer__column-links">
+  	 			  <a href="#" class="footer__column-link theme_dark">Главная</a>
+  	 			  <a href="#" class="footer__column-link theme_dark">Концепция</a>
+  	 			  <a href="#" class="footer__column-link theme_dark">Наставники</a>
   	 			</div>
   	 		</div>
-  	 		
-
-  	 		<div class="column_third">
-  	 			<p class="c-header">Соцсети</p>
-  	 			<div class="column_links">
-  	 			  <a href="#" class="text theme_dark"> 
+  	 		<div class="footer__column">														<!--третья колонка ссылок-->
+  	 			<p class="footer__column-heading">Соцсети</p>
+  	 			<div class="footer__column-links">
+  	 			  <a href="#" class="footer__column-link theme_dark"> 
   	 			    <img src="images/facebook_color_white.svg" alt="icon" class="facebook"> 
   	 			    Facebook
   	 			  </a>
-  	 			  <a href="#" class="text theme_dark"> 
+  	 			  <a href="#" class="footer__column-link theme_dark"> 
   	 			    <img src="images/vk_color_white.svg" alt="icon" class="vkontakte"> 
   	 			    Вконтакте
   	 			  </a>
-  	 			  <a href="#" class="text theme_dark">
+  	 			  <a href="#" class="footer__column-link theme_dark">
   	 			    <img src="images/instagram_color_white.svg" alt="icon" class="instagram"> 
   	 			    Instagram
   	 			  </a>
-  	 			</div>
-  	 		</div>	 	
+  	 			 </div>
+  	 		   </div>
+  	 	     </div>
+  	       </section>  <!--конец секции футер-->  
+         </section> <!--конец секции page-->  
+        </body>
+       </html>
 
-  	 	</div>
-  	 </div>  <!--конец секции футер--> 	 	
-
-	 
-    
-</body>
-</html>

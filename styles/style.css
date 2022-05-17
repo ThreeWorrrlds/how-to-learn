@@ -20,6 +20,8 @@
   max-height: 756px;
   /* выше установили ограничения для секции */
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f2f2f2;
   position: relative;
   }
@@ -37,30 +39,9 @@
   margin-right: 0;
   margin-top: 80px;
 }
-
-div {
-  border: 1px solid green;   /* границы убрать по готовности */
-}
-img {
-  border: 1px solid green;  /* границы убрать по готовности */
-}
-p{
-  border: 1px solid green;
-}
-
 /* ---------начало блока хедер-----------------*/
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-}
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo {
+.logo_place_header {
   width: 228px;
   height: 32px;
   top: 30px;
@@ -69,16 +50,16 @@ p{
   z-index: 3;  
 }
 
-.title {
-  width: 730px;
-  margin-left: 64px;
+.header__title {
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  width: 730px;
+  margin-left: 64px;
   z-index: 3;
 }
 
-.subtitle {
+.header__subtitle {
   width: 388px;
   left: 64px;
   bottom: 30px;
@@ -89,12 +70,12 @@ p{
   z-index: 3;
 }
 
-.link {
+.header__link {
   text-decoration: none;
   color:  #2f80ed;
 }
 
-.main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -102,10 +83,11 @@ p{
   right: 0;
   z-index: 2;
 }
-.square-pic {   /*синий квадрат*/
+
+.header__square-pic {   
   width: 568px;
   height: 568px;
-  margin-top: 64px;
+  top: 64px;
   right: 0;
   background-color: #2f80ed;
   position: absolute;
@@ -116,31 +98,32 @@ p{
 
 /* ---------начало блока дискрипшн------------*/
 
-.two-columns {    /*весь блок*/
+.description {
+  padding-top: 100px;  
+}
+
+.description__two-columns {    
   display: flex;
   flex-direction: row;
   margin: auto;  
   width: 80%;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
 }
-.two-columns__brief {   /*главные проблемы в обучении*/  
+
+.two-columns__brief {    
   width: 175px;
   line-height: 1.2;
   font-size: 18px;  
   color:  #2f80ed;
 }
 
-.two-columns__main-text {  /*три строки в колонке*/
+.two-columns__main-text {  
   display: flex;
   flex-direction: column;
   width: 80%;
   min-width: 784px;
-  min-height:           /* ??????? */
   justify-content: space-between; 
-  gap: 30px;  /*я час искал это свойство из трех букв*/ 
+  gap: 30px;   
 }
 
 .two-columns__paragraph {
@@ -148,20 +131,18 @@ p{
   font-size: 24px;    
 }
 
-.span-accent {
+.two-columns__span-accent {
   display: inline-block;
   font-weight: 700;
 }
 /* ---------конец блока дискрипшн------------*/
 
 /* ---------начало блока диджитс------------*/
-.digits {
-  margin:0;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.digits {  
+  padding-top: 100px;  
 }
 
-.section-title {
+.digits__section-title {
   text-align: center;
   width: 60%;
   margin:auto;
@@ -171,7 +152,7 @@ p{
   font-weight: 700;
 }
 
-.section-subtitle{
+.digits__section-subtitle{
   text-align: center;
   width:60%;
   margin: auto;
@@ -179,7 +160,7 @@ p{
   font-size: 24px;
 }
 
-.table {
+.digits__table {
   display: flex;
   flex-direction: column;
   width: 1100px;
@@ -194,20 +175,6 @@ p{
   justify-content: space-between;
 }
 
-th {
-  border: 1px solid green;
-  width: 250px;            /*непрое@и ширину*/  
-}
-
-td {
-  border: 1px solid green;
-  width: 250px;             /*непрое@и ширину*/  
-}
-
-table {
-  border: 1px solid green;
-}
-
 .thead{
   line-height: 1.15;
   font-weight: 700;
@@ -215,31 +182,51 @@ table {
   text-align: left;
 }
 
-.string {
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
 .tbody {
   line-height: 1.2;
   font-weight: normal;
   font-size: 18px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
 .tbody:nth-of-type(4n) {
   margin-bottom: 0;  
 }
-/* ---------конец блока диджитс------------*/
 
+.string {  
+  margin-bottom: 0;
+}
+
+.th {  
+  width: 250px;            
+  margin: 0; 
+  padding: 0;  
+}
+
+.td {  
+  width: 250px;              
+  margin: 0; 
+  padding: 0;
+}
+/* ---------конец блока диджитс------------*/
 
 /* ---------начало блока фейнман------------*/
 .feynman {
   position: relative;
   width: 100%;
-  min-height: 890px;
+  height: 890px;
   background-color: #f2f2f2;
-  z-index: 0;  
+  z-index: 0;
+  margin-top: 100px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.group {
+  width: 100%;
+  height: 790px;
 }
 
 .feynman__title{
@@ -248,8 +235,7 @@ table {
   font-size: 120px;
   font-weight: 700;
   text-align: center; 
-  margin: auto;
-  margin-top: 100px;
+  margin: auto;  
 }
 
 .feynman__subtitle {
@@ -270,9 +256,9 @@ table {
   display: block;
   position: absolute;
   right: 48px;
-  top:50%;
-  
+  top:50%;  
 }
+
 .feynman__img {
   width: 867px;
   height: 637px;
@@ -283,14 +269,7 @@ table {
 }
 /* ---------конец блока фейнман------------*/
 
-
 /* ---------начало блока кауфман------------*/
-kaufman__table {
-  border: 1px solid green;
-}
-
-
-
 .kaufman {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -319,6 +298,7 @@ kaufman__table {
   margin: auto;
   margin-bottom: 20px;
 }
+
 .kaufman__section-subtitle {
   line-height: 34px;
   font-size: 24px;
@@ -327,6 +307,7 @@ kaufman__table {
   width: 60%;
   margin: auto;
 }
+
 .kaufman__table { 
   width: 1100px;
   min-height: 300px;
@@ -334,10 +315,8 @@ kaufman__table {
   display: flex;
   flex-direction: column;
 }
-.cell-width {
-  width: 200px;
-}
-.t_block {
+
+.table__block {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
@@ -351,10 +330,15 @@ kaufman__table {
   font-weight: 700;
   text-align: left;
 }
+
 .k-body {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.cell-width {
+  width: 200px;
 }
 
 .theme_dark {
@@ -362,32 +346,25 @@ kaufman__table {
 }
 /* ---------конец блока кауфман------------*/
 
-
 /* ---------начало блока футер------------*/
 
-.footer {
-  min-height: 350px;
-  flex-basis: 711px;
+.footer {  
   padding-top: 60px;
-  padding-bottom: 40px;
-  border: 1px solid red;
+  padding-bottom: 40px;  
   background-color: #1f1f1f;
-
 }
 
-.footer__row {
+.footer__columns {
   display: flex;
   flex-direction: row;
   width: 90%;
   min-height: 250px;
   margin: auto;
-  position: relative;
-  border: 1px solid purple;
+  position: relative;  
   box-sizing: border-box;
-
 }
 
-.new {
+.footer__logo {
   width: 228px;
   height: 32px;  
   position: absolute;
@@ -395,7 +372,7 @@ kaufman__table {
   left: 0;
 }
 
-.author {
+.footer__author {
   margin: 18px 0;
   padding: 0;
   line-height: 25px;
@@ -406,46 +383,31 @@ kaufman__table {
   bottom: 0;  
 }
 
-.column_first {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 50%;
-  min-height: 150px;    /* высота отбалды */
+.footer__column_content_copyright {
+  flex-basis: 711px;      
 }
 
-.column_second {
+.footer__column {
+  width: 25%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: 25%;
-  box-sizing: border-box;
+  align-items: flex-end;   
   }
 
-.column_third {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  width: 25%;
-  box-sizing: border-box;
-}
-
-.c-header {
+.footer__column-heading {
   margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.column_links {
+.footer__column-links {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
   margin-bottom: 16px;
 }
 
-.text {
+.footer__column-link {
   display: block;
   text-decoration: none;
   line-height: 30px;
