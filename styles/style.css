@@ -254,21 +254,6 @@
   margin-top: 80px;
 }
 
-.table__heading {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin-top: 20;
-  margin-bottom: 0;
-}
-
 .kaufman__triangle{
   width: 877px;
   height: 877px;
