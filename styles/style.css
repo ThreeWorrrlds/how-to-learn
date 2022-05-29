@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: #f2f2f2;
-  position: relative;    
+  position: relative;
 }
 
 
@@ -44,7 +44,7 @@
   font-size: 102px;
   font-weight: bold;
   width: 730px;
-  z-index: 3;  
+  z-index: 3;
 }
 
 .header__subtitle {
@@ -56,12 +56,17 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
-  z-index: 3; 
+  z-index: 3;
 }
 
 .header__link {
   text-decoration: none;
-  color:  #2f80ed;
+  color: #2f80ed;
+  transition: opacity 0.3s ease;
+}
+
+.header__link:hover {
+  opacity: .6;
 }
 
 .header__main-illustration {
@@ -74,7 +79,7 @@
   z-index: 2;
 }
 
-.header__square-pic {   
+.header__square-pic {
   width: 568px;
   height: 568px;
   top: 64px;
@@ -82,7 +87,19 @@
   background-color: #2f80ed;
   position: absolute;
   z-index: 1;
-}  
+  animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* ---------конец блока хедер-----------------*/
 
 
@@ -91,7 +108,7 @@
   padding-top: 100px;
 }
 
-.two-columns {    
+.two-columns {
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -99,7 +116,7 @@
   justify-content: space-between;
 }
 
-.two-columns__brief {    
+.two-columns__brief {
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -108,7 +125,7 @@
   margin: 0;
 }
 
-.two-columns__main-text { 
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   display: flex;
@@ -127,10 +144,93 @@
   display: inline-block;
   font-weight: 700;
 }
+
 /* ---------конец блока дискрипшн------------*/
 
+
+/* ---------начало блока техники------------*/
+
+.techniques {
+  padding: 100px 0px;
+}
+
+.cards {
+  padding: 0;
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards__item {
+  list-style: none;
+  width: 240px;
+}
+
+.card__image {
+  margin: 60px 40px 43px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.cards__title {
+  margin: 0 0 16px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* ---------конец блока техники------------*/
+
+
+/* ---------начало блока видео------------*/
+
+.video {}
+
+.section-title {}
+
+.section-subtitle {}
+
+.video__iframes {
+  padding: 50px 0 0 0;
+  width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+
+/* ---------конец блока видео------------*/
+
+
+/* ---------начало блока Оакли------------*/
+
+.oakley {
+  padding-top: 160px;
+}
+
+/* ---------конец блока Оакли------------*/
+
+
 /* ---------начало блока диджитс------------*/
-.digits {  
+.digits {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -138,23 +238,23 @@
 .section-title {
   text-align: center;
   width: 60%;
-  margin:auto;
+  margin: auto;
   margin-bottom: 20px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
 }
 
-.section-subtitle{
+.section-subtitle {
   text-align: center;
-  width:60%;
+  width: 60%;
   margin: auto;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.table {  
+.table {
   width: 1100px;
   min-height: 300px;
   margin: auto;
@@ -165,7 +265,7 @@
   padding: 0;
 }
 
-.table__cell { 
+.table__cell {
   width: 250px;
   margin-top: 60px;
 }
@@ -184,10 +284,11 @@
   margin-top: 20px;
   margin-bottom: 0;
 }
+
 /* ---------конец блока диджитс------------*/
 
 /* ---------начало блока фейнман------------*/
-.feynman {    
+.feynman {
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -202,7 +303,7 @@
   align-items: center;
 }
 
-.feynman__title{  
+.feynman__title {
   margin: 100px 0 70px;
   width: 648px;
   line-height: 1.15;
@@ -227,12 +328,18 @@
   color: #2f80ed;
   position: absolute;
   right: 48px;
-  top:50%;
+  top: 50%;
+  transition: opacity 0.3s ease;
 }
+
+.feynman__link:hover {
+  opacity: .6;
+}
+
 /* ---------конец блока фейнман------------*/
 
 /* ---------начало блока кауфман------------*/
-.kaufman {  
+.kaufman {
   padding-top: 90px;
   padding-bottom: 90px;
   background-color: #1f1f1f;
@@ -256,7 +363,7 @@
   margin-top: 80px;
 }
 
-.kaufman__triangle{
+.kaufman__triangle {
   width: 877px;
   height: 877px;
   position: absolute;
@@ -267,10 +374,11 @@
   box-sizing: border-box;
   z-index: -1;
 }
+
 /* ---------конец блока кауфман------------*/
 
 /* ---------начало блока футер------------*/
-.footer {  
+.footer {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
@@ -291,7 +399,7 @@
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -300,7 +408,7 @@
 }
 
 .footer__author {
-  margin:18px 0;
+  margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
