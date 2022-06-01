@@ -1,10 +1,10 @@
-.recources__link {
+.resources__logo {
   width: 270px;
   height: 38px;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 
-.recources__link:hover {
+.resources__logo:hover {
   opacity: .6;
 }
