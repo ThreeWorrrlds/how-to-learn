@@ -3,7 +3,5 @@
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
-  min-height: 250px;
-  margin: auto;
-  box-sizing: border-box;
+  margin: 0 auto;
 }

@@ -8,6 +8,5 @@
   background-size: cover;
   box-sizing: border-box;
   z-index: -1;
-  animation: rotation 20s linear infinite;
   transform-origin: 512px 382px;
 }
